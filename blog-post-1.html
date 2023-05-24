@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <title>Valentin Bujdoso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Valentin Bujdoso" />
+    <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, Material CV, portfolio" />
+    <meta name="author" content="lmtheme" />
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link rel="stylesheet" href="css/transition-animations.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+  </head>
+
+  <body class="material-template">
+    <!-- Loading animation -->
+    <div class="preloader">
+      <div class="preloader-animation">
+        <div class="preloader-spinner">
+        </div>
+      </div>
+    </div>
+    <!-- /Loading animation -->
+
+    <div id="page" class="page">
+      <!-- Header -->
+      <header id="site_header" class="header mobile-menu-hide">
+        <div class="header-content">
+          <div class="site-title-block mobile-hidden">
+            <div class="site-title">Valentin <span>Bujdoso</span></div>
+          </div>
+
+          <!-- Navigation -->
+          <div class="site-nav">
+            <!-- Main menu -->
+            <ul id="nav" class="site-main-menu">
+              <li>
+                <a class="pt-trigger" href="index.html#home" data-animation="62">Home</a><!-- href value = data-id without # of .pt-page. -->
+              </li>
+              <li>
+                <a class="pt-trigger" href="index.html#resume" data-animation="62">Resume</a>
+              </li>
+              <li class="active">
+                <a class="pt-trigger" href="index.html#blog" data-animation="62">Blog</a>
+              </li>
+              <li>
+                <a class="pt-trigger" href="index.html#contact" data-animation="62">Contact</a>
+              </li>
+            </ul>
+            <!-- /Main menu -->
+          </div>
+          <!-- Navigation -->
+        </div>
+      </header>
+      <!-- /Header -->
+
+      <!-- Mobile Header -->
+      <div class="mobile-header mobile-visible">
+        <div class="mobile-logo-container">
+          <div class="mobile-site-title">Valentin Bujdoso</div>
+        </div>
+
+        <a class="menu-toggle mobile-visible">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <!-- /Mobile Header -->
+
+      <!-- Main Content -->
+      <div id="main" class="site-main">
+        <!-- Single Page Content -->
+        <div class="single-page-content">
+          <div class="content-area">
+            <div class="page-content">
+              <!-- Blog Entry Content -->
+
+              <div class="blog-post-content">
+                <h1>How to create Amazon Lex chatbot</h1>
+
+                <div class="entry-meta">
+                  <span class="date"><a href="#"><i class="fa fa-fw fa-clock-o"></i> 22 May, 2023</a></span>
+                  <span class="divider">|</span>
+                  <span class="autor"><a href="#"><i class="fa fa-fw fa-user"></i> Valentin Bujdoso</a></span>
+                  <span class="divider">|</span>
+                  <span class="category"><a href="#"><i class="fa fa-fw fa-folder"></i> AWS Lex</a></span>
+                </div>
+
+                <h4>What is Amaxon Lex?</h4>
+                <p>Amazon Lex is an AWS service for building conversational interfaces for applications using voice and text. With Amazon Lex, the same conversational engine that powers Amazon Alexa is now available to any developer, enabling you to build sophisticated, natural language chatbots into your new and existing applications. Amazon Lex provides the deep functionality and flexibility of natural language understanding (NLU) and automatic speech recognition (ASR) so you can build highly engaging user experiences with lifelike, conversational interactions, and create new categories of products.</p>
+                <p>Amazon Lex enables any developer to build conversational chatbots quickly. With Amazon Lex, no deep learning expertise is necessary—to create a bot, you just specify the basic conversation flow in the Amazon Lex console. Amazon Lex manages the dialogue and dynamically adjusts the responses in the conversation. Using the console, you can build, test, and publish your text or voice chatbot. You can then add the conversational interfaces to bots on mobile devices, web applications, and chat platforms (for example, Facebook Messenger).</p>
+                <p>Amazon Lex provides pre-built integration with AWS Lambda, and you can easily integrate with many other services on the AWS platform, including Amazon Cognito, AWS Mobile Hub, Amazon CloudWatch, and Amazon DynamoDB. Integration with Lambda provides bots access to pre-built serverless enterprise connectors to link to data in SaaS applications, such as Salesforce, HubSpot, or Marketo.</p>
+              
+                <h4>How does that look in practice?</h4>
+                <h5>Create AWS Lex Bot.</h5>
+                <p>Open Amazon Lex on AWS.</p>
+                <img class="post-image img-responsive" src="images/blog/1.png"/><br/>
+
+                <p>Click on create bot.</p>
+                <img class="post-image img-responsive" src="images/blog/2.png"/><br/>
+
+                <p>Fill Bot name, choose "Create a role with basic Amazon Lex permissions" in IAM permissions, choose "No" in COPPA then click next.</p>
+                <img class="post-image img-responsive" src="images/blog/3.png"/><br/>
+
+                <p>On "Step 2 Add language to bot" just click on Done. It will redirect you to the Intent creation.</p>
+
+                <blockquote>
+                  <i><h6>What is the intent?</h6>
+                  <p>An intent represents an action that the user wants to perform.</p></i>
+                </blockquote>
+
+                <p>In the "Sample utterances" add your expected requests/questions from the user.</p>
+                <img class="post-image img-responsive" src="images/blog/4.png"/><br/>
+
+                <p>In the "Initial response" add your expected response. In the "Variations" you can give multiple possible answers.</p>
+                <img class="post-image img-responsive" src="images/blog/5.png"/><br/>
+
+                <p>Click on build on the top right corner. It will take some time.</p>
+                <img class="post-image img-responsive" src="images/blog/6.png"/><br/>
+
+                <p>When you see the green "Successfully built language English (US) in bot" then you can click on test and you can ask your test question.</p>
+                <img class="post-image img-responsive" src="images/blog/7.png"/><br/>
+
+                <p>When you finished your intent configuration go to the "Bot versions" tab.</p>
+                <img class="post-image img-responsive" src="images/blog/8.png"/><br/>
+                <p>Click on "Create version" where you can click on "Create".</p>
+
+                <h6>Now we have almost everything from AWS side. We just need a new IAM role to integrate our bot.</h6>
+                <p>Go to IAM/Users on AWS. Click on "Add users" and create a user with the following settings:</p>
+                <img class="post-image img-responsive" src="images/blog/i1.png"/><br/>
+                <img class="post-image img-responsive" src="images/blog/i2.png"/><br/>
+                <p>When we have the user let open it and go to "Security credentials" and create "Access keys".</p>
+                <img class="post-image img-responsive" src="images/blog/i3.png"/><br/>
+                <img class="post-image img-responsive" src="images/blog/i4.png"/><br/>
+                <p>We will use the above generated Acces key and Secret acces key in the next steps.</p>
+
+                <h5>Integrate AWS Lex with our website</h5>
+                <h6>Create integration with kommunicate</h6>
+                <p>Go to the https://www.kommunicate.io/ page. Create a new account. Do the "Customize your chat widget" part.</p>
+                <p>On the "Add a chatbot to automate your customer conversations" part select Amazon Lex. Then select LexV2 and use the above created Acces Key ID and Secret access key.</p>
+                <p>Name your bot and choose a photo for it.</p>
+                <p>On the next page leave the human handoff disable.</p>
+                <p>Go back to the dashboard and open the "Install Kommunicate’s chat widget on your website or app" part. There will be some javascript code what you need to copy and paste to your website's body.</p>
+                <p>Thats all you need to use your Amazon Lex Bot on your webpage.</p>
+
+                <div class="entry-meta entry-tags-share">
+                  <ul class="tags">
+                    <li><a>AWS Lex</a></li>
+                  </ul>
+                </div>
+
+              </div>
+              <!-- End of Blog Entry Content -->
+
+              <script type="text/javascript">
+                (function(d, m){
+                    var kommunicateSettings = 
+                        {"appId":"2d3fd54327d8c8c524c18dd67d41932a9","popupWidget":true,"automaticChatOpenOnNavigation":true};
+                    var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+                    s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+                    var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+                    window.kommunicate = m; m._globals = kommunicateSettings;
+                })(document, window.kommunicate || {});
+            /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+            </script>
+
+            </div>
+          </div>
+        </div>
+        <!-- End of Single Page Content -->
+      </div>
+      <!-- /Main Content -->
+    </div>
+    <footer>
+      <div class="copyrights">© 2023 All rights reserved.</div>
+    </footer>
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/pages-switcher.js"></script>
+    <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/validator.js"></script>
+    <script type="text/javascript" src="js/jquery.shuffle.min.js"></script>
+    <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+    <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR-API-KEY"></script>-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="js/jquery.googlemap.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
